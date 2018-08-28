@@ -16,6 +16,4 @@ RUN cd ..
 RUN apt-get autoremove -y \
 && apt-get remove --purge -y git
 
-RUN apt-get install -y bsdtar && ln -sf $(which bsdtar) $(which tar)
-
 RUN rm -rf singularity-2.4.6
